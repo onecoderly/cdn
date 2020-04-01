@@ -1,0 +1,336 @@
+@import "_variables"
+@import "_mixins"
+@import "_remixicon"
+@import "_normalize"
+
+*,
+*::before
+*::after
+  box-sizing border-box
+
+html, body
+  height: 100%
+
+html
+  font-size font-size-browser
+  -webkit-text-size-adjust 100%
+  -ms-text-size-adjust 100%
+  -ms-overflow-style scrollbar
+  -webkit-tap-highlight-color transparent
+
+body
+  position relative
+  background-color body-background
+  font-family font-family-base
+  font-size font-size-base
+  line-height font-line-height
+  color body-color
+  padding 0
+  margin 0
+  overflow-x hidden
+  text-size-adjust: 100%
+  ::selection
+    background sea-lighter
+    color froth
+a
+  color link-color
+  &:hover
+    color link-hover-color
+  &:active
+    color link-active-color
+  &.disabled
+    color disabled-color
+ul, menu, dir
+  margin 0
+  padding 0
+img
+  max-width 100%
+
+button
+  outline: none
+  cursor pointer
+  
+@import "_extend"
+@import "_partial/layout"
+@import "_partial/lists"
+@import "_partial/categories"
+@import "_partial/tag"
+@import "_partial/ayer"
+@import "_partial/search"
+@import "_partial/article"
+@import "_partial/articles"
+@import "_partial/archive"
+@import "_partial/footer"
+@import "_partial/float"
+@import "_partial/highlight"
+@import "_partial/mobile"
+@import "_partial/pace"
+@import "_partial/gitalk"
+@import "_partial/apple"
+@import "_partial/reward"
+@import "_partial/share"
+
+if sidebar
+  @import "_partial/sidebar"
+
+// Media Query
+@media (max-width: 768px)
+  html
+    font-size: 60%
+
+//更改valine的评论框颜色	
+.vwrap {
+    border-color: #66dec6 !important;
+}
+.vheader.item3 input {
+	color: #ec8787;
+}
+
+// 改变代码背景色
+.article-entry pre,
+.article-entry .highlight {
+  background: #f6f6f6;
+  font-size: 1em;
+}
+
+// 改变代码变量名颜色
+.article-entry .highlight .line {
+  color: #5567ad;
+}
+
+// 改变代码参数颜色
+pre .value,
+pre .string {
+  color: #26caaa;
+}
+
+// 改变</template>颜色
+pre .tag, pre .doctype, pre .params, pre .function, pre .css .value {
+    color: #c67ac7;
+}
+
+// 改变element-ui的注释和组件代码颜色
+pre .comment {
+    /* color: #75715e; */
+    color: #50cc50;
+}
+
+//代码块复制按钮
+.highlight{
+  //方便copy代码按钮（btn-copy）的定位
+  position: relative;
+}
+.btn-copy {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    -webkit-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    padding: 2px 6px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    opacity: 0;
+}
+.btn-copy span {
+    margin-left: 5px;
+}
+.highlight:hover .btn-copy{
+  opacity: 1;
+}
+
+// 改变主页文章展示的边框
+.articles .article-entry {
+  border: 1px dashed #6fe156;
+}
+
+// 按钮水平居中
+a.article-more-link {
+    position: relative;
+    left: -42%;
+    background-color: #e39d7a !important;
+}
+
+// 主页文章时间
+.article-date,
+.article-category .article-category-link,
+.archive-year-wrap .archive-year,
+.archive-article-date {
+  color: #df9fe0;
+}
+
+// 每篇文章下面的横线
+.articles .article:not(:last-child) {
+  border-bottom: 0.1rem #cce5ff solid;
+}
+
+// 博客头像
+.navbar .logo img {
+  width: 5.2rem;
+  border-radius: 50%;
+}
+
+// 
+.list-inline{
+  margin : 0px;  
+  text-align: center;
+  font-size: 17px;
+  padding: 0px !important;
+}
+// 不蒜子
+.list-busuanzi{
+  text-align: center;
+  // margin-left: 22.5%;
+  color: #4c618f;
+  font-size: 17px;
+}
+// 不蒜子
+.list-busuanzi li{
+  width: 100%;
+  position: relative;
+  top: -7px;
+}
+.list-inline li{
+  display: block !important;  
+  text-align: center;
+  color: #2153c0;
+}
+span#busuanzi_container_site_pv {
+  width: 100%;
+}
+span#busuanzi_container_site_uv {
+  width: 100%;
+}
+#days {
+    color: #4c618f;
+}
+// 运行时间字体颜色
+div#days {
+  color: #1095e6;
+}
+
+// about页面
+// 字体
+.article-entry {
+  font-size: 110%;
+}
+
+#my_photo{
+  width: 160px;
+  height 160px;
+  }
+
+#my_photo #my {
+  max-width: 45%;
+  border-radius: 50%; 
+}
+.local-search{
+  background-color: #ffffff;
+}
+.search-result-list li .search-result{
+  color: rgba(0,0,0,0.8);
+}
+.local-search-input {
+  background-color: rgba(228, 238, 239, 0.8);
+}
+.article-entry pre code {
+  color: #bb4865;
+}
+/* 自定义页脚跳动的心样式 ，记得 id="heart"给i图标添加的*/
+#hearts {
+    animation: heartsAnimate 1.33s ease-in-out infinite;
+}
+@keyframes heartsAnimate {
+    0%,100%{transform:scale(1);}
+    10%,30%{transform:scale(0.9);}
+    20%,40%,60%,80%{transform:scale(1.1);}
+    50%,70%{transform:scale(1.1);}
+}
+.with-love {
+    color: #f10610;
+}
+@media (min-width: 770px) {
+  .wrap, .outer,.articles {
+    width: 90rem;
+  }
+  .article-inner {
+    width: 85rem;
+    margin-left: 10px; 
+  }
+}
+.article-entry:hover {
+  box-shadow: 0 0 10px #dfdede;  
+}
+a {
+  text-decoration: none;
+}
+// 标题渐变色
+a.article-title {
+  background: linear-gradient(to right, #d8a9d8, #e95a73) !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+a.article-more-link:hover {
+  // 阅读更多按钮的渐变色
+  background: linear-gradient(to right, #d8a9d8, #e95a73) !important;
+}
+.article-header .article-title,.article-entry h2 {
+  font-size: 1.2em;  
+  // 给标题左边边框添加颜色
+  border-left-color: #d8a9d8;
+}
+.article-entry {
+  padding: 0 10px;
+}
+/* 优化侧边栏显示 */
+.navbar-toggle {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 9.5rem;
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
+}
+// 更改鼠标样式: a:hover改变鼠标悬浮
+body {
+  cursor: url(
+    https://coderblue.cn/images/fei.png
+  ), default!important;
+}
+// 底部渐变色
+.footer {
+  background: linear-gradient(90deg, rgba(247,149,51,0.101961) 0, rgba(243,112,85,0.101961) 15%, rgba(239,78,123,0.101961) 30%, rgba(161,102,171,0.101961) 44%, rgba(80,115,184,0.101961) 58%, rgba(16,152,173,0.101961) 72%, rgba(7,179,155,0.101961) 86%, rgba(109,186,130,0.101961) 100%) !important;
+}
+
+.footer {
+  padding: 2rem 0 0 0 !important;
+}
+
+.footer .outer>ul {
+  height: 9rem !important;
+}
+
+.cdn {
+  width: 6rem; 
+}
