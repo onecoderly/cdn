@@ -1,3 +1,4 @@
+// dao-voice留言
 (function (i, s, o, g, r, a, m) {
   i["DaoVoiceObject"] = r;
   i[r] = i[r] || function () {

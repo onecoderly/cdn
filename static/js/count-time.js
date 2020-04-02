@@ -1,3 +1,4 @@
+// 网站运行时间
 function show_date_time() {
   window.setTimeout("show_date_time()", 1000);
   BirthDay = new Date("01/01/2020 00:00:00");
