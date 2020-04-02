@@ -1,4 +1,3 @@
-<script>
 (function (i, s, o, g, r, a, m) {
   i["DaoVoiceObject"] = r;
   i[r] = i[r] || function () {
@@ -25,4 +24,3 @@ daovoice('init', {
   app_id: "a690aa21"
 });
 daovoice('update');
-</script>
