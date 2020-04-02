@@ -7887,6 +7887,9 @@ body {
 .cdn {
   width: 6rem;
 }
+#daodream-container .daodream-launcher-enabled {
+  opacity: 0.5;
+}
 @-moz-keyframes heartsAnimate {
   0%, 100% {
     transform: scale(1);
