@@ -5767,8 +5767,6 @@ button {
 .wrap,
 .outer {
   width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
   margin: auto;
   overflow-x: hidden;
   min-height: calc(100% - 157px);
@@ -6699,13 +6697,11 @@ a.article-category-link {
   border-bottom: 0.1rem #ddd solid;
 }
 .articles .article-entry {
-  margin-top: 1rem;
   padding: 0 2rem 2rem;
   border: 1px dashed #dfdede;
 }
 .articles .article-entry .article-more-link {
   display: inline-block;
-  float: right;
   background-color: #403e3e;
   padding: 0.5rem 1rem;
   -webkit-border-radius: 4px;
@@ -6716,9 +6712,6 @@ a.article-category-link {
 }
 .articles .article-entry .article-gallery {
   margin-top: 1.5rem;
-}
-.articles .article-footer {
-  margin-top: 1rem;
 }
 .archives-wrap {
   position: relative;
@@ -7742,8 +7735,6 @@ pre .comment {
   border: 1px dashed #6fe156;
 }
 a.article-more-link {
-  position: relative;
-  left: -42%;
   background-color: #e39d7a !important;
 }
 .article-date,
@@ -7837,9 +7828,6 @@ div#days {
     margin-left: 10px;
   }
 }
-.article-entry:hover {
-  box-shadow: 0 0 10px #dfdede;
-}
 a {
   text-decoration: none;
 }
@@ -7889,6 +7877,50 @@ body {
 }
 #daodream-container .daodream-launcher-enabled {
   opacity: 0.5;
+}
+.article-gallery-photos>img {
+  display: none;
+}
+.articles .article-inner {
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
+  transition: all;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+.articles .article-inner:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px 6px #def4f8;
+}
+.articles .article-entry {
+  border: none;
+}
+.articles .article {
+  text-align: center;
+  overflow: hidden;
+}
+.articles a.article-title {
+  font-size: 0.8em;
+}
+.articles .article-entry:hover {
+  box-shadow: none;
+}
+.articles .article-meta {
+  position: relative;
+  top: -5px;
+}
+header.article-header {
+  position: relative;
+  top: 15px;
+}
+.articles .article-footer {
+  margin-top: 0;
 }
 @-moz-keyframes heartsAnimate {
   0%, 100% {
