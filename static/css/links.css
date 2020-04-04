@@ -1,0 +1,384 @@
+		/*√ø»’“ª—‘*/
+      .innerlinkcat {
+        display: block;
+        border-left: 3px solid #1a1;
+        margin: 10px 10px 5px;
+        line-height: 13px;
+        padding-left: 10px;
+        font-size: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #f9f9f9;
+      }
+
+      h4 {
+        text-align: center;
+        margin: 8rem 0 5rem 2.5%;
+        font-weight: bolder;
+      }
+     
+      .day-word {
+        margin-bottom: 2rem;
+      }
+
+      .day-word .innerlinkcat {
+        border: none;
+        text-align: center;
+        background-color: white;
+      }
+
+      .innerlinkcat>p {
+        font-size: 1.3em;
+        margin-top: 0;
+        padding-bottom: 1rem;
+      }
+
+      #hitokoto {
+        background: linear-gradient(to right, red, blue);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+     /*”—¡¥*/
+      .project {
+        width: 100%;
+      }
+
+      .project .col-sm-6.col-md-6 {
+        width: 49%;
+        text-align: center;
+      }
+
+      .project .col-sm-6.col-md-6:first-child {
+        padding-left: 2.5%;
+      }
+
+      .project .thumbnail {
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        transition: all .6s;
+        -moz-transition: all .6s;
+        -webkit-transition: all .6s;
+        -o-transition: all .6s;
+      }
+
+      .thumbnail img {
+        height: 200px;
+      }
+
+      .project .thumbnail:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px 6px #def4f8;
+      }
+
+      .col-sm-6.col-md-6 p {
+        color: rgb(81, 209, 166);
+        font-size: 14px;
+        margin-top: 1rem;
+      }
+
+      /* valine */
+      footer.article-footer {
+        width: 100%;
+      }
+
+      .vcard:last-child {
+        margin-bottom: 1rem;
+      }
+
+      /* …Í«Î”—¡¥ */
+      .link {
+        width: 100%;
+      }
+
+      .link ol {
+        padding: 10px 10px 10px 40px;
+        list-style: decimal-leading-zero;
+        background: rgba(0, 0, 0, .03);
+        border-radius: 5px;
+        font-size: 13px;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .link p {
+        margin-left: 1% !important;
+      }
+
+      .row {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        overflow: hidden;
+        padding-left: 1rem;
+      }
+
+      .col-sm-6.col-md-3 {
+        width: 20%;
+        margin-bottom: 1rem;
+      }
+
+      .box {
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        height: 260px;
+        box-shadow: 0 0 10px #ccc;
+      }
+
+      .box:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 8px 6px #def4f8;
+      }
+
+      .box-content p {
+        text-align: center;
+        color: #e266d3;
+      }
+
+      .box-content p:first-child {
+        color: #f65488;
+        margin-top: 1.5rem;
+        font-size: 1.75rem;
+      }
+
+      .row span.innerlinkcat {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      img.img-circle {
+        height: 148px;
+      }
+
+      a:hover,
+      a {
+        text-decoration: none;
+        outline: none;
+      }
+
+      @media (max-width: 780px) {
+        .box {
+          height: 267px;
+        }
+
+        .row {
+          padding-left: 7%;
+        }
+
+        .col-sm-6.col-md-3 {
+          width: 33%;
+        }
+
+        .project .col-sm-6.col-md-6:first-child {
+          padding-left: 6.5%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .row {
+          padding-left: 7%;
+        }
+
+        .col-sm-6.col-md-3 {
+          width: 50%;
+        }
+
+        .project .col-sm-6.col-md-6 {
+          width: 98%;
+          padding-left: 7%;
+        }
+
+        .project .col-sm-6.col-md-6:first-child {
+          padding-left: 7%;
+        }
+      }
+     
+	 /*ø®∆¨√¿ªØ*/
+      .links_items ul,
+      .newcomments_items ul,
+      .newposts_items ul {
+        padding: 10px 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+      }
+
+      .links_items ul li {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 5px 20px;
+      }
+
+      .links_items ul li a {
+        color: #666;
+        padding: 15px 30px;
+        font-size: 12px;
+        text-shadow: 0 1px 3px rgba(88, 88, 88, .1);
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, .1);
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+      }
+
+      .links_items ul li a:hover {
+        background: #000;
+        color: #fff;
+      }
+
+      a.innerlinksa {
+        text-decoration: none;
+      }
+
+      .innerlinks_items {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 10px 7px;
+      }
+
+      .innerlinks_items:after {
+        content: '';
+        flex-grow: 99999;
+      }
+
+      .innerlinks_items li {
+        height: 36px;
+        line-height: 36px;
+        flex-grow: 1;
+        margin: 5px;
+        border: 1px solid rgba(0, 0, 0, .1);
+        border-radius: 2px;
+        text-align: center;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+      }
+
+      .innerlinks_items li a {
+        color: #fff;
+        line-height: 2;
+        padding: 5px 15px;
+        display: inline;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+      }
+
+      .innerlinks_items li:hover {
+        background: #000;
+      }
+
+      .innerlinks_items li:hover .innerlinksa {
+        color: #fff;
+      }
+
+      ul.innerlinks_items {
+        margin: 0;
+      }
+
+      .innerlinkcat {
+        display: block;
+        border-left: 3px solid #1a1;
+        margin: 20px 10px 5px;
+        line-height: 13px;
+        padding-left: 10px;
+        font-size: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #f9f9f9;
+      }
+
+      .randomlinksc0 {
+        background: rgba(244, 124, 37, .8);
+      }
+
+      .randomlinksc1 {
+        background: rgba(37, 185, 244, .8);
+      }
+
+      .randomlinksc2 {
+        background: rgba(244, 37, 37, .8);
+      }
+
+      .randomlinksc3 {
+        background: rgba(233, 37, 244, .8);
+      }
+
+      .randomlinksc4 {
+        background: rgba(137, 37, 244, .8);
+      }
+
+      .randomlinksc5 {
+        background: rgba(37, 80, 244, .8);
+      }
+
+      .randomlinksc6 {
+        background: rgba(31, 175, 14, .8);
+      }
+
+      .randomlinksc7 {
+        background: rgba(158, 13, 126, .8);
+      }
+
+      .randomlinksc8 {
+        background: rgba(244, 191, 37, .8);
+      }
+
+      .randomlinksc9 {
+        background: rgba(244, 144, 37, .8);
+      }
+
+      .randomlinksc10 {
+        background: rgba(6, 133, 183, .8);
+      }
+
+      .randomlinksc11 {
+        background: rgba(247, 105, 170, .8);
+      }
+
+      .randomlinksc12 {
+        background: rgba(14, 183, 169, .8);
+      }
+
+      .randomlinksc13 {
+        background: rgba(52, 53, 48, .8);
+      }
+
+      .randomlinksc14 {
+        background: rgba(24, 167, 97, .8);
+      }
+
+      .randomlinksc15 {
+        background: rgba(0, 127, 255, .8);
+      }
+
+      .randomlinksc16 {
+        background: rgba(127, 0, 255, .8);
+      }
+
+      .randomlinksc17 {
+        background: rgba(191, 0, 255, .8);
+      }
+
+      .randomlinksc18 {
+        background: rgba(147, 108, 108, .8);
+      }
+
+      .randomlinksc19 {
+        background: rgba(179, 77, 77, .8);
+      }
+
+      .randomlinksc20 {
+        background: rgba(191, 64, 64, .8);
+      }
+     
