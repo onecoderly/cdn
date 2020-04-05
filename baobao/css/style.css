@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+#main {
+  min-height: 1700px;
+  height: 100%;
+}
+
+#main,
+body {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(247, 149, 51, 0.101961) 0, rgba(243, 112, 85, 0.101961) 15%, rgba(239, 78, 123, 0.101961) 30%, rgba(161, 102, 171, 0.101961) 44%, rgba(80, 115, 184, 0.101961) 58%, rgba(16, 152, 173, 0.101961) 72%, rgba(7, 179, 155, 0.101961) 86%, rgba(109, 186, 130, 0.101961) 100%)
+}
+
+textarea {
+  display: block;
+  outline: none;
+  border: none;
+  width: 80%;
+  margin: 0 10%;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(247, 149, 51, 0.101961) 0, rgba(243, 112, 85, 0.101961) 15%, rgba(239, 78, 123, 0.101961) 30%, rgba(161, 102, 171, 0.101961) 44%, rgba(80, 115, 184, 0.101961) 58%, rgba(16, 152, 173, 0.101961) 72%, rgba(7, 179, 155, 0.101961) 86%, rgba(109, 186, 130, 0.101961) 100%);
+  color: #e151e1;
+
+  cursor: default;
+  line-height: 45px;
+  font-family: Arial;
+  font-size: 2.2rem
+}
+
+
+/* 先隐藏 */
+#nav1 {
+  display: none;
+}
+
+.pick,
+.pick1,
+.pick2 {
+  display: block;
+  border-radius: 100px;
+  font-size: 2rem;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  width: 50%;
+  margin: 2% 25%;
+  border: 1px solid #fff;
+  background: #d97dd2;
+}
+
+#text,
+#text1,
+#text2,
+#text3,
+#text4 {
+  display: none;
+}
+
+button {
+  min-width: 100px;
+  min-height: 50px;
+  margin: 0 10% 2% 10%;
+  font-size: 1.8rem;
+  border-radius: 18px;
+  background-color: #ee9c9c;
+  color: #fff;
+  box-shadow: 0 0 10px #ee223c;
+  border: none;
+}
+
+.main {
+  display: none !important;
+}
+
+p.final {
+  font-size: 45px;
+  color: #5aefa6;
+  display: none;
+  opacity: 0.5;
+}
+.pick2 {
+  opacity: 0.5;
+  width: 20%;
+  margin: 2% 40%;
+  display: none;
+  box-shadow:  0px 0px 10px #e05151;
+}
+
+.final-div {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+}
+
+#container {
+  display: none;
+}
