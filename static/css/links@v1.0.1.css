@@ -1,3 +1,9 @@
+	  .row img {
+        transition: 2s all; 
+      }
+      .row img:hover {
+        transform: rotate(360deg);  
+      }
 		/*√ø»’“ª—‘*/
       .innerlinkcat {
         display: block;

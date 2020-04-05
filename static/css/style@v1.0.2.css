@@ -7897,6 +7897,7 @@ body {
 .articles .article-inner:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 8px 6px #def4f8;
+  background: linear-gradient(90deg, rgba(247,149,51,0.102) 0, rgba(243,112,85,0.102) 15%, rgba(239,78,123,0.102) 30%, rgba(161,102,171,0.102) 44%, rgba(80,115,184,0.102) 58%, rgba(16,152,173,0.102) 72%, rgba(7,179,155,0.102) 86%, rgba(109,186,130,0.102) 100%);
 }
 .articles .article-entry {
   border: none;
@@ -7904,6 +7905,11 @@ body {
 .articles .article {
   text-align: center;
   overflow: hidden;
+}
+@media (min-width: 1000px) {
+  .articles .article {
+    padding-left: 1rem;
+  }
 }
 .articles a.article-title {
   font-size: 0.8em;
