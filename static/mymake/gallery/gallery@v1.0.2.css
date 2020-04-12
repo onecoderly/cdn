@@ -1,4 +1,4 @@
-#app{background: url(/images/bg_3d.png);background-size: 100% 100%;}
+#app{background: url(https://cdn.jsdelivr.net/gh/onecoderly/cdn/static/mymake/gallery/bg_3d.png); background-size: 100% 100%;}
 .container{width: 1024px;margin:0 auto;position: relative;}
 .pictureSlider{height: 518px;margin-bottom: 24px;}
 .poster-item{background: #fff;height: 400px;width:336px;border-radius: 10px;padding:45px 23px 20px 23px;
