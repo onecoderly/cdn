@@ -1,8 +1,9 @@
-$(document).ready(function () {
+ $(document).ready(function () {
   //检测是否有评论框
   if ($("#vcomments").html()) {
     //定义变量
     var c_name = $('#vcomments input[name="nick"]');
+    console.log(c_name)
     var c_mail = $('#vcomments input[type="email"]');
     var c_text = $('#veditor');
     var mailzz = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
@@ -11,7 +12,7 @@ $(document).ready(function () {
     //隐藏
     $(".vcontrol .text-right button").hide();
     $(".vcontrol .text-right").prepend('<span class="submit_f vbtn">回复</span>');
-    $('body').on('click', '.submit_f', function () {
+    $('body').on('click', '.vsubmit.vbtn', function () {
       if (nullpd(c_name.val())) {
         layer.msg('请输入昵称', {
           time: 2000,

@@ -1,0 +1,214 @@
+<% if (theme.mylinks != null){ %>
+<h3><%= page.title %></h3>
+<div class="day-word">
+  <span class="innerlinkcat">
+    <p>每日一言</p>
+    <span id="hitokoto">获取中...</span>
+  </span>
+  <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+</div>
+<div class="container-talk">
+  <ul class="talk">
+    <li class="talk-card">
+      <div class="head" style="padding: 2rem 1rem;">
+        <img src="https://coderblue.cn/images/blue.jpg" alt="">
+      </div>
+      <div class="content-talk our-love">
+        <p>2020年2月14日</p>
+        <p>情人节💐</p>
+        <p>今天是我和小朋友相恋的日子</p>
+        <p>小杨要好好宠着小朋友</p>
+        <p>虽然有时候很任性，总喜欢打击我</p>
+        <p>但是也不妨碍我喜欢她，想好好牵着她的手💖</p>
+        <p id="htmer_time" style="color: lightcoral;"></p>
+        <img src="https://coderblue.cn/images/flower.jpg" alt="">
+        <div class="content-time">
+          <i class="fa fa-clock-o">&nbsp;2020年02月14日13:14</i>
+        </div>
+    </li>
+
+    <% theme.myTalks.forEach(function(item){%>
+    <li class="talk-card">
+      <div class="head" style="padding: 2rem 1rem;">
+        <img src="https://coderblue.cn/images/blue.jpg" alt="">
+      </div>
+      <div class="content-talk">
+        <p><%=item.first%></p>
+        <p><%=item.second%></p>
+        <p><%=item.third%></p>
+        <p><%=item.fourth%></p>
+        <p><%=item.fifth%></p>
+        <p><%=item.sixth%></p>
+        <p><%=item.seventh%></p>
+        <img src="<%=item.bgc%>" alt="">
+        <div class="content-time">
+          <i class="fa fa-clock-o">&nbsp;<%=item.nowtime%></i>
+        </div>
+      </div>
+    </li>
+    <% }) %>
+  </ul>
+</div>
+
+<style>
+  .talk-card i {
+    color: #d371dd;
+  }
+  .our-love i{
+    color: rgb(201, 102, 132);
+  }
+  .our-love p:first-child{
+    color: rgb(240, 69, 69);
+    font-weight: 5000;
+  }
+  .our-love p:nth-child(2){
+    color: rgb(243, 19, 194);
+  }
+  .our-love p:nth-child(3){
+    color: rgb(235, 111, 148);
+  }
+  .our-love p:nth-child(4){
+    color: rgb(199, 104, 183);
+  }
+  .our-love p:nth-child(5){
+    color: rgb(82, 196, 231);
+  }
+  .our-love p:nth-child(6){
+    color: rgb(250, 29, 0);
+  }
+  h3 {
+    text-align: center;
+    margin: 4rem 0 8rem 0;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container-talk {
+    padding-top: 3%;
+    overflow: hidden;
+  }
+
+  .talk li {
+    width: 80%;
+    height: auto;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    margin-left: 10%;
+    list-style: none;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    display: flex;
+  }
+
+  .talk li:hover {
+    border-radius: 10px;
+    transform: scale(1.02);
+    transition: all 0.6s ease-in-out;
+  }
+
+  .head>img {
+    width: 46px;
+    width: 46px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    transition: 2s all;
+  }
+
+  .head img:hover {
+    transform: rotate(360deg);
+  }
+
+  .content-talk img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 200px;
+  }
+
+  .content-talk {
+    width: 100%;
+    padding: 2rem 1rem;
+    border-left: 1px dashed #e1a3d6;
+  }
+
+  .content-time {
+    border-top: 1px dashed rgb(112, 178, 204);
+    height: 30px;
+  }
+
+  /* 日期 */
+  i.fa.fa-clock-o {
+    float: right;
+    margin-top: 2rem;
+  }
+
+  /* 每日一言 */
+  .day-word {
+    margin: 4rem 10%;
+    width: 80%;
+    box-shadow: 0 0 1px #ccc;
+    border-radius: 5px;
+  }
+
+  .day-word .innerlinkcat {
+    border: none;
+    text-align: center;
+  }
+
+  .innerlinkcat>p {
+    font-size: 1.3em;
+    margin-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  #hitokoto {
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+</style>
+
+<script>
+  function siteTime() {
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth() + 1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+    year - 作为date对象的年份，为4位年份值
+    month - 0-11之间的整数，做为date对象的月份
+    day - 1-31之间的整数，做为date对象的天数
+    hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+    minutes - 0-59之间的整数，做为date对象的分钟数
+    seconds - 0-59之间的整数，做为date对象的秒数
+    microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    var t1 = Date.UTC(2020, 02, 14, 13, 14, 00);
+    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+    var diff = t2 - t1;
+    var diffYears = Math.floor(diff / years);
+    var diffDays = Math.floor((diff / days) - diffYears * 365);
+    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes *
+      minutes) / seconds);
+    document.getElementById("htmer_time").innerHTML = "<span>小杨、小朋友</span>"  + diffDays + " <span>天</span> " + diffHours +
+      "  <span>时</span> " + diffMinutes + "  <span>分</span> " + diffSeconds + "  <span>秒</span>";
+    $('#htmer_time span').css('color', 'lightcoral')
+    $('#htmer_time span').css('font-weight', 'blod')
+    // + diffYears + " 年 "
+  }
+  siteTime()
+</script>
+<% } %>
