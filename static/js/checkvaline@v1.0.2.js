@@ -3,7 +3,6 @@
   if ($("#vcomments").html()) {
     //定义变量
     var c_name = $('#vcomments input[name="nick"]');
-    console.log(c_name)
     var c_mail = $('#vcomments input[type="email"]');
     var c_text = $('#veditor');
     var mailzz = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
