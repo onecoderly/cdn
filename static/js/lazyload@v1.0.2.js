@@ -28,7 +28,7 @@ for(var i=0;i<imgs.length;i++){
 		  // 获取自定义属性data-src，用真图片替换假图片
 		  imgs[i].src = imgs[i].getAttribute('data-src')
 		}
-	  },2000)
+	  },500)
 	})(i)
   }
 }
