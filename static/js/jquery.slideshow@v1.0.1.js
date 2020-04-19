@@ -86,25 +86,5 @@ dots.forEach(function (dot, activeIndex) {
             pageTransition(activeIndex);
         }
     });
-    let i = 0
-    const setIntervalId =  setInterval(() => {
-        var currentActiveIndex = slideshow.style.getPropertyValue("--active-index");
-        activeIndex = i
-        if (Number(currentActiveIndex) !== activeIndex) {
-            pageTransition(activeIndex);
-        }
-        i += 1
-        if(i === slides.length) {
-            i = 0
-        }
-    }, 4000);
-    let count = 0;
-    window.addEventListener("scroll",function(e){
-        count += 1
-    console.log(count);
-        if(count === 30) {
-            window.clearInterval(setIntervalId)
-        }
-    })
 });
 })()
