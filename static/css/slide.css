@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+}
+.carousel {
+  position: relative;
+  height: 70vh;
+  font-family: Lora, serif;
+  color: white;
+}
+.carousel h1 {
+  margin: 0;
+  font-size: 250%;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-shadow: 0 2px 2px black;
+}
+.carousel h3 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 0.2em;
+  text-shadow: 0 2px 2px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.carousel .page-title {
+  position: absolute;
+  left: 4em;
+  top: 2em;
+  z-index: 1;
+}
+.carousel .slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.carousel .slideshow .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.carousel .slideshow .slide:first-child {
+  z-index: 0;
+}
+.carousel .slideshow .slide:nth-child(1) {
+  background: url("https://cdn.jsdelivr.net/gh/onecoderly/cdn/baobao/meandlove.jpg") center/cover no-repeat;
+}
+.carousel .slideshow .slide:nth-child(2) {
+  background: url("/images/hua.jpg") center/cover no-repeat;
+}
+.carousel .slideshow .slide .slide-title {
+  position: absolute;
+  top: 40vh;
+  left: 2em;
+}
+.carousel .bars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.carousel .bars .bar {
+  flex: 1;
+  background: #2c3e50;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.carousel .nav-dots {
+  position: absolute;
+  left: 2em;
+  bottom: 4em;
+  z-index: 1;
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+}
+.carousel .nav-dots .dot {
+  width: 1em;
+  height: 1em;
+  margin: 1em;
+}
+.carousel .nav-dots .dot a {
+  position: relative;
+  display: block;
+  height: 1em;
+  line-height: 1em;
+}
+.carousel .nav-dots .dot a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+.carousel .nav-dots .dot a:hover::before {
+  background: rgba(255, 255, 255, 0.6);
+}
+.carousel .nav-dots .dot a.active::before {
+  background: rgba(255, 255, 255, 0.8);
+}
+// 自己写的样式
+ body::-webkit-scrollbar {
+    display: none;
+  }
+
+  #app {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  section.outer {
+    width: 100%;
+    /* width: 90%; */
+  }
+
+  #totop {
+    display: block !important;
+  }
+
+  .love {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .love-item {
+    width: 19%;
+    height: auto;
+    margin: 0 0.6rem 2rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgb(171, 235, 243);
+  }
+
+  .love-item:hover {
+    box-shadow: 0 0 7px rgb(230, 126, 178);
+  }
+
+  .love-item img {
+    width: 100%;
+    height: 30rem;
+    border-radius: 3px;
+    transition: all;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+  }
+
+  .love-item img:hover {
+    -webkit-animation: shade 3s ease-in-out 1;
+    -moz-animation: shade 3s ease-in-out 1;
+    -ms-animation: shade 3s ease-in-out 1;
+    -o-animation: shade 3s ease-in-out 1;
+    animation: shade 3s ease-in-out 1;
+    transform: scale(1.1);
+  }
+
+  /*每日一言*/
+  .innerlinkcat {
+    display: block;
+    border-left: 3px solid #1a1;
+    margin: 10px 10px 5px;
+    line-height: 13px;
+    padding-left: 10px;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f9f9f9;
+  }
+
+  h4 {
+    text-align: center;
+    margin: 8rem 0 5rem 2.5%;
+    font-weight: bolder;
+  }
+
+  .day-word {
+    margin-bottom: 2rem;
+    background: #d39fe8;
+  }
+
+  .day-word .innerlinkcat {
+    border: none;
+    text-align: center;
+    background-color: white;
+  }
+
+  /* 定义关键帧 */
+  @-webkit-keyframes shade {
+    from {
+      opacity: 1;
+    }
+
+    15% {
+      opacity: 0.4;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes shade {
+    from {
+      opacity: 1;
+    }
+
+    15% {
+      opacity: 0.4;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes shade {
+    from {
+      opacity: 1;
+    }
+
+    15% {
+      opacity: 0.4;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes shade {
+    from {
+      opacity: 1;
+    }
+
+    15% {
+      opacity: 0.4;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shade {
+    from {
+      opacity: 1;
+    }
+
+    15% {
+      opacity: 0.4;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin: 4rem 0 8rem 0;
+  }
+
+  @media (max-width: 1041px) {
+    .carousel {
+      height: 40vh !important;
+    }
+
+    section.outer {
+      width: 100%;
+    }
+
+    .love-item {
+      width: 32%;
+    }
+  }
+
+  @media (max-width: 780px) {
+    section.outer {
+      width: 100%;
+    }
+
+    .container-love {
+      padding: 0 3%;
+    }
+
+    .love-item {
+      width: 47%;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    section.outer {
+      width: 100%;
+    }
+
+    .love-item {
+      width: 100%;
+      padding: 0;
+      margin: 0 0 1rem 0;
+    }
+
+    .love-item img {
+      height: 35rem;
+    }
+
+    .carousel .nav-dots .dot {
+      display: none;
+    }
+
+    .container-love {
+      padding: 0;
+    }
+  }
