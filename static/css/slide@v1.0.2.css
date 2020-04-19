@@ -280,6 +280,11 @@ body {
     margin: 4rem 0 8rem 0;
   }
 
+  div#vcomments-box {
+    width: 60%;
+    margin: 3% 20% 2% 20%;
+  }
+
   @media (max-width: 1041px) {
     .carousel {
       height: 40vh !important;
@@ -291,6 +296,11 @@ body {
 
     .love-item {
       width: 32%;
+    }
+
+    div#vcomments-box {
+      width: 80%;
+      margin: 0 10%;
     }
   }
 
@@ -330,5 +340,10 @@ body {
 
     .container-love {
       padding: 0;
+    }
+
+    div#vcomments-box {
+      width: 98%;
+      margin: 0 1%;
     }
   }
