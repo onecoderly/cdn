@@ -44,6 +44,18 @@
         -webkit-background-clip: text;
         color: transparent;
       }
+	 #app {
+	  height: auto;
+	  width: 100%;
+	  position: relative;
+	  overflow: hidden;
+	}
+	 body::-webkit-scrollbar {
+	   display: none;
+	 }
+	 #totop {
+	  display: block !important;
+	 }
      /*ÓÑÁ´*/
       .project {
         width: 100%;

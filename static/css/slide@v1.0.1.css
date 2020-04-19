@@ -53,7 +53,7 @@ body {
   background: url("https://cdn.jsdelivr.net/gh/onecoderly/cdn/baobao/meandlove.jpg") center/cover no-repeat;
 }
 .carousel .slideshow .slide:nth-child(2) {
-  background: url("/images/hua.jpg") center/cover no-repeat;
+  background: url("https://cdn.jsdelivr.net/gh/onecoderly/cdn/baobao/hua.jpg") center/cover no-repeat;
 }
 .carousel .slideshow .slide .slide-title {
   position: absolute;
