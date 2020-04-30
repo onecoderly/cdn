@@ -1,4 +1,3 @@
-(function() {
 	$("[data-fancybox]").fancybox({
     thumbs: {
       autoStart: true, //缩略图
@@ -84,4 +83,3 @@
     } 
   });
   console.log(x);
-}())
