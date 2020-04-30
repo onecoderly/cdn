@@ -6581,10 +6581,6 @@ a.toc-link {
     opacity: 1;
     transform: translateY(0);
   }
-  .articles .article {
-	width: 98%;
-	margin: 0 1%;
-  }
 }
 @media (min-width: 768px) {
   .article-albums-item img {
@@ -8017,5 +8013,11 @@ a {
 @keyframes sun {
   100% {
     background-position: -400% 0;
+  }
+}
+@media (max-width: 485px) {
+  .articles .article {
+	width: 98% !important;
+	margin: 0 1% !important;
   }
 }
