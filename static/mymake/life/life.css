@@ -1,0 +1,83 @@
+ @font-face {
+      font-family: 'firefly';
+      src: url(/css/remixicon/ZCOOLKuaiLe-Regular.ttf);
+  }
+  ul {
+      list-style: none;
+  }
+  button {
+      outline: none;
+      border: none;
+  }
+  .firefly {
+      width: 10rem;
+      height: 3rem;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(to right, #6EB46E 10%, #55B455);
+      border-radius: 40px;
+      opacity: .88;
+      cursor: pointer;
+      transition: 1s;
+  }
+  .firefly:hover {
+      box-shadow: 0 0 10px #B4FFB4;
+  }
+  .firefly p {
+      height: 25px;
+      line-height: 25px;
+      font-size: 20px;
+      /* F5DD8F */
+      color: rgb(225, 236, 204);
+      font-family: firefly;
+      opacity: .88;
+  }
+  .lightning {
+      width: 95%;
+      height: 80%;
+      position: absolute;
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 40px;
+      transition: .8s;
+      overflow: hidden;
+  }
+  .firefly:hover .lightning {
+      box-shadow: 0 0 4px #B4FFB4 inset;
+  }
+  .lightning ul {
+      opacity: 0;
+      transition: .8s;
+  }
+  .firefly:hover ul {
+      opacity: .8;
+  } 
+  .lightning ul li {
+      width: 2.5px;
+      height: 2.5px;
+      background-color: #91FA91;
+      position: absolute;
+      bottom: 10%;
+      border-radius: 50%;
+      opacity: .6;
+      animation: fireflymove infinite linear;
+  }
+  @keyframes fireflymove {
+      100% {
+          bottom: 100%;
+      }
+  }
+  .row {width: 80%; margin: 0 10%;}
+  .container-love a { text-decoration: none;}
+  h3 {color: #e75c90;}
+  @media (max-width: 480px) {
+    .row {width: 980%; margin: 0 1%;}
+    .carousel .nav-dots .dot {
+      display: block !important;
+      position: relative;
+      left: 15rem; 
+      opacity: 0.5; 
+    }
+  }
