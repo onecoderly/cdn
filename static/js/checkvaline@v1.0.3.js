@@ -33,7 +33,14 @@
           icon: 2
         })
         return false;
-      }	  
+      }
+	  if (!c_link.val()) {
+        layer.msg('留下传送门，方便博主联系哦🙂。', {
+          time: 2000,
+          icon: 2
+        })
+        return false;
+      }
       $('.vsubmit').click();
 
     });
