@@ -13,7 +13,7 @@
     $(".vcontrol .text-right button").hide();
     $(".vcontrol .text-right").prepend('<span class="submit_f vbtn">回复</span>');
     $('body').on('click', '.vsubmit.vbtn', function () {
-      if (nullpd(c_name.val())) {
+      if (!c_name.val()) {
         layer.msg('请输入昵称', {
           time: 2000,
           icon: 2
@@ -27,30 +27,21 @@
         })
         return false;
       }
-      if (!c_text.val()) {
-        layer.msg('评论不能为空', {
+	  if (!c_link.val()) {
+        layer.msg('留下传送门，方便博主联系🙂。', {
           time: 2000,
           icon: 2
         })
         return false;
       }
-	  if (!c_link.val()) {
-        layer.msg('留下传送门，方便博主联系哦🙂。', {
+      if (!c_text.val()) {
+        layer.msg('请输入合适的评论🤭', {
           time: 2000,
           icon: 2
         })
         return false;
       }
       $('.vsubmit').click();
-
     });
-    //判断空
-    function nullpd(str) {
-      if (str == "" || str == null || str == undefined) {
-        return true;
-      } else {
-        return false;
-      }
-    }
   }
 });
