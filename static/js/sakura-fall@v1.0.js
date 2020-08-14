@@ -1,10 +1,10 @@
 let _document = $(document)
 
 $(document).click(function () {
-_document.snowfall('clear');
+  sakura()
 })
 $(document).dblclick(function () {
-sakura()
+  _document.snowfall('clear');
 })
 
 function sakura() {
@@ -17,7 +17,3 @@ _document.snowfall({
   maxSpeed: 2
 })
 }
-
-setTimeout(() => {
-sakura()
-}, 1000);
