@@ -6972,11 +6972,14 @@ a.archive-article-title {
   width: auto;
   border: none;
 }
+.article-entry .highlight .gutter pre {
+  display: none !important;
+}
 .article-entry .highlight td {
   border: none;
   padding: 0;
   padding-top: 2rem;
-  background: url("https://img-blog.csdnimg.cn/20200805171333873.png#pic_center") no-repeat -6.4% 0 #272822;
+  background: url("https://img-blog.csdnimg.cn/20200805171333873.png#pic_center") no-repeat 0 0 #272822;
   background-size: 4rem;
 }
 .article-entry .highlight figcaption {
