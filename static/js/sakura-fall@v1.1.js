@@ -1,9 +1,9 @@
 let _document = $(document)
 
-$(document).click(function () {
+$(document).dblclick(function () {
   sakura()
 })
-$(document).dblclick(function () {
+$(document).click(function () {
   _document.snowfall('clear');
 })
 
