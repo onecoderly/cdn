@@ -7826,6 +7826,8 @@ div#days {
     width: 85rem;
     margin-left: 10px;
   }
+}
+@media (max-width: 650px) {
   .is-collapsible {
 	  max-height: 1000px;
 	  overflow-y: scroll;
