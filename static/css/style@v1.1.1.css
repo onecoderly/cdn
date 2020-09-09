@@ -6471,7 +6471,7 @@ a.toc-link {
 }
 .is-collapsible {
   max-height: 1000px;
-  overflow-y: scroll;
+  overflow: hidden;
   transition: all;
 }
 .is-collapsed {
@@ -7825,6 +7825,11 @@ div#days {
   .article-inner {
     width: 85rem;
     margin-left: 10px;
+  }
+  .is-collapsible {
+	  max-height: 1000px;
+	  overflow-y: scroll;
+	  transition: all;
   }
 }
 a {
